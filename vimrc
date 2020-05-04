@@ -14,7 +14,6 @@ set incsearch
 set ignorecase
 set smartcase
 
-
 set nocompatible
 filetype on
 filetype indent on
@@ -138,6 +137,8 @@ Plug 'MarcWeber/vim-addon-mw-utils'
 Plug 'kana/vim-textobj-user'
 Plug 'fadein/vim-FIGlet'
 
+" 文本对齐插件 https://github.com/godlygeek/tabular
+Plug 'godlygeek/tabular'
 
 call plug#end()
 
