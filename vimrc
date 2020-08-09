@@ -141,6 +141,10 @@ call plug#end()
 
 " let g:SnazzyTransparent = 1
 " color snazzy
+let g:lightline = {
+\ 'colorscheme': 'snazzy',
+\ }
+
 
 " ===
 " === NERDTree
