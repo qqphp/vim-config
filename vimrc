@@ -1,9 +1,9 @@
-let mapleader=" "
 syntax on
+let mapleader=" "
 set number
 set norelativenumber
-set cursorline
 set wrap
+set cursorline
 set showcmd
 set wildmenu
 set vb t_vb=
