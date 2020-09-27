@@ -41,7 +41,8 @@ set foldlevel=99
 set laststatus=2
 set autochdir
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
-set paste
+" set paste
+set autoindent
 
 noremap = nzz
 noremap - Nzz
@@ -204,6 +205,7 @@ let b:ale_fixers = ['autopep8', 'yapf']
 " === Taglist
 " ===
 map <silent> T :TagbarOpenAutoClose<CR>
+let g:tagbar_sort = 0
 
 
 " ===
