@@ -1,5 +1,11 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =3
+let g:netrw_dirhistcnt =9
+let g:netrw_dirhist_9='/home/leiyong/.vim'
+let g:netrw_dirhist_8='/etc/mysql'
+let g:netrw_dirhist_7='/etc/sysctl.d'
+let g:netrw_dirhist_6='/etc/httpd/conf'
+let g:netrw_dirhist_5='/home/leiyong/Git/blog/laravel_blog'
+let g:netrw_dirhist_4='/usr/share/keepass'
 let g:netrw_dirhist_3='/home/leiyong'
 let g:netrw_dirhist_2='/home/leiyong/.vim'
 let g:netrw_dirhist_1='/home/leiyong/.i3'
