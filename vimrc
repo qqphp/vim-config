@@ -58,6 +58,7 @@ set laststatus=2
 "自动切换工作目录。这主要用在一个 Vim 会话之中打开多个文件的情况，默认的工作目录是打开的第一个文件的目录。该配置可以将工作目录自动切换到，正在编辑的文件的目录。
 set autochdir
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+<<<<<<< HEAD
 "进入粘贴模式
 set paste
 "indentexpr/noindentexpr：是/否使用indentexpr缩进方式
@@ -74,6 +75,10 @@ let &t_ut=''
 " let &t_SI = "\<Esc>]50;CursorShape=1\x7"
 " let &t_SR = "\<Esc>]50;CursorShape=2\x7"
 " let &t_EI = "\<Esc>]50;CursorShape=0\x7"
+=======
+" set paste
+set autoindent
+>>>>>>> 807b6099d18250eb2a601d39b787b07f791f8817
 
 noremap = nzz
 noremap - Nzz
@@ -236,6 +241,7 @@ let b:ale_fixers = ['autopep8', 'yapf']
 " === Taglist
 " ===
 map <silent> T :TagbarOpenAutoClose<CR>
+let g:tagbar_sort = 0
 
 
 " ===
