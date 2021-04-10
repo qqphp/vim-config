@@ -136,6 +136,7 @@ Plug 'mattn/emmet-vim'
 " color preview for vim
 Plug 'gko/vim-coloresque'
 
+" Show a diff using Vim its sign column
 if has('nvim') || has('patch-8.0.902')
   Plug 'mhinz/vim-signify'
 else
