@@ -124,14 +124,17 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 " Vim script for text filtering and alignment
 Plug 'godlygeek/tabular'
 
-" Taglist
+" Vim plugin that displays tags in a window, ordered by scope
 Plug 'majutsushi/tagbar', { 'on': 'TagbarOpenAutoClose' }
 
-" Undo Tree
+" The undo history visualizer for VIM
 Plug 'mbbill/undotree/'
 
 " emmet-vim is a vim plug-in which provides support for expanding abbreviations similar to emmet
 Plug 'mattn/emmet-vim'
+
+" color preview for vim
+Plug 'gko/vim-coloresque'
 
 call plug#end()
 
