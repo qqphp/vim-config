@@ -109,12 +109,20 @@ map sh <C-w>t<C-w>K
 
 call plug#begin('~/.vim/plugged')
 
+" lean & mean status/tabline for vim that's light as air
 Plug 'vim-airline/vim-airline'
+
+" Elegant vim theme with bright colors
 Plug 'connorholyday/vim-snazzy'
 
 " File navigation
-Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
+Plug 'preservim/nerdtree'
+
+" A plugin of NERDTree showing git status
 Plug 'Xuyuanp/nerdtree-git-plugin'
+
+" Vim script for text filtering and alignment
+Plug 'godlygeek/tabular'
 
 " Taglist
 Plug 'majutsushi/tagbar', { 'on': 'TagbarOpenAutoClose' }
@@ -122,17 +130,37 @@ Plug 'majutsushi/tagbar', { 'on': 'TagbarOpenAutoClose' }
 " Undo Tree
 Plug 'mbbill/undotree/'
 
+" emmet-vim is a vim plug-in which provides support for expanding abbreviations similar to emmet
 Plug 'mattn/emmet-vim'
 
 call plug#end()
 
+" ===
+" === snazzy
+" ===
 let g:SnazzyTransparent = 1
 colorscheme snazzy
 
 " ===
 " === NERDTree
 " ===
-map tt :NERDTreeToggle<CR>
+map tt :NERDTreeFocus<CR>
+
+" ===
+" === nerdtree-git-plugin
+" ===
+let g:NERDTreeGitStatusIndicatorMapCustom = {
+                \ 'Modified'  :'✹',
+                \ 'Staged'    :'✚',
+                \ 'Untracked' :'✭',
+                \ 'Renamed'   :'➜',
+                \ 'Unmerged'  :'═',
+                \ 'Deleted'   :'✖',
+                \ 'Dirty'     :'✗',
+                \ 'Ignored'   :'☒',
+                \ 'Clean'     :'✔︎',
+                \ 'Unknown'   :'?',
+                \ }
 
 " ===
 " === Taglist
