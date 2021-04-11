@@ -149,7 +149,7 @@ call plug#end()
 " === snazzy
 " ===
 let g:SnazzyTransparent = 1
-colorscheme snazzy
+" colorscheme snazzy
 
 " ===
 " === NERDTree
