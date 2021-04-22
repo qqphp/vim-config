@@ -136,6 +136,9 @@ Plug 'mattn/emmet-vim'
 " color preview for vim
 Plug 'gko/vim-coloresque'
 
+" Underlines the word under the cursor
+Plug 'itchyny/vim-cursorword'
+
 " Show a diff using Vim its sign column
 if has('nvim') || has('patch-8.0.902')
   Plug 'mhinz/vim-signify'
