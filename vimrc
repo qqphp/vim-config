@@ -48,18 +48,18 @@ set scrolloff=5
 "设置行宽，即一行显示多少个字符
 set textwidth=0
 "indent缩进，eol行尾，start刚开始插入
-set backspace=indent,eol,start
+"set backspace=indent,eol,start
 "启用文本自动折叠
-set foldmethod=indent
+"set foldmethod=indent
 "设置foldlevel为较高的设置，则文件总是以打开的折叠形式加载
-set foldlevel=99
+"set foldlevel=99
 "是否显示状态栏。0 表示不显示，1 表示只在多窗口时显示，2 表示显示
 set laststatus=2
 "自动切换工作目录。这主要用在一个 Vim 会话之中打开多个文件的情况，默认的工作目录是打开的第一个文件的目录。该配置可以将工作目录自动切换到，正在编辑的文件的目录。
 set autochdir
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 "进入粘贴模式
-set paste
+" set paste
 "indentexpr/noindentexpr：是/否使用indentexpr缩进方式
 "set indentexpr
 
