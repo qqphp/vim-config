@@ -1,4 +1,4 @@
-" syntax enable命令，启用语法高亮度。
+"syntax enable命令，启用语法高亮度。
 syntax enable
 "Vim命令开始执行(前缀)的标识
 let mapleader=" "
@@ -40,6 +40,9 @@ set tabstop=2
 set shiftwidth=2
 "Tab 转为多少个空格
 set softtabstop=2
+"自动缩进：在Vim中还可以进行自动缩进，主要有cindent、smartindent和autoindent三种模式
+set autoindent
+set smartindent
 "如果行尾有多余的空格（包括 Tab 键），该配置将让这些空格显示成可见的小方块
 set list
 set listchars=tab:▸\ ,trail:▫
@@ -49,6 +52,8 @@ set scrolloff=5
 set textwidth=0
 "indent缩进，eol行尾，start刚开始插入
 "set backspace=indent,eol,start
+"vim中delete（backspace）键不能向左删除
+set backspace=2
 "启用文本自动折叠
 "set foldmethod=indent
 "设置foldlevel为较高的设置，则文件总是以打开的折叠形式加载
@@ -59,7 +64,7 @@ set laststatus=2
 set autochdir
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 "进入粘贴模式
-" set paste
+"set paste
 "indentexpr/noindentexpr：是/否使用indentexpr缩进方式
 "set indentexpr
 
@@ -71,9 +76,9 @@ filetype indent on
 filetype plugin on
 filetype plugin indent on
 let &t_ut=''
-" let &t_SI = "\<Esc>]50;CursorShape=1\x7"
-" let &t_SR = "\<Esc>]50;CursorShape=2\x7"
-" let &t_EI = "\<Esc>]50;CursorShape=0\x7"
+"let &t_SI = "\<Esc>]50;CursorShape=1\x7"
+"let &t_SR = "\<Esc>]50;CursorShape=2\x7"
+"let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 
 noremap = nzz
 noremap - Nzz
