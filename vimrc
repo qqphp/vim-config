@@ -67,6 +67,8 @@ au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g
 "set paste
 "indentexpr/noindentexpr：是/否使用indentexpr缩进方式
 "set indentexpr
+"使用被选择文本以 Shell 命令执行
+"vmap <leader>e <esc>:'<,'>:w !sh<CR>
 
 "去掉高亮
 exec "nohlsearch"
