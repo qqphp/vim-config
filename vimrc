@@ -153,6 +153,12 @@ else
   Plug 'mhinz/vim-signify', { 'branch': 'legacy' }
 endif
 
+" quoting/parenthesizing made simple
+Plug 'tpope/vim-surround'
+
+" Smart selection of the closest text object
+Plug 'gcmt/wildfire.vim'
+
 call plug#end()
 
 " ===
