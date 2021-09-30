@@ -35,13 +35,13 @@ set mouse-=a
 "由于 Tab 键在不同的编辑器缩进不一致，该设置自动将 Tab 转为空格
 set expandtab
 "按下 Tab 键时，Vim 显示的空格数。
-set tabstop=2
+set tabstop=4
 "在文本上按下>>（增加一级缩进）、<<（取消一级缩进）或者==（取消全部缩进）时，每一级的字符数
-set shiftwidth=2
+set shiftwidth=4
 "Tab 转为多少个空格
-set softtabstop=2
+"set softtabstop=2
 "自动缩进：在Vim中还可以进行自动缩进，主要有cindent、smartindent和autoindent三种模式
-set autoindent
+"set autoindent
 set smartindent
 "如果行尾有多余的空格（包括 Tab 键），该配置将让这些空格显示成可见的小方块
 set list
